@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Aclonica&display=swap');
+
+/* 2) Define gradient variables ------------------------------------------- */
+:root {
+  --cyan-blue-1: linear-gradient(to right bottom, #00ffee, #0596f0);
+  --cyan-blue-2: linear-gradient(to right bottom, #00e8ff, #14b5ff, #3a98ff, #0070eb);
+  --blue-purple: linear-gradient(to right bottom, #00e8ff , #410ee7, #8709f5);
+  --purpl-pink: linear-gradient(to right bottom, #410ee7, #eb00d8);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: url('/assets/images/wisp.jpg') no-repeat center center fixed;
+  background-size: cover;
+  font-family: 'Aclonica', sans-serif;
+  font-weight: bold;
+  
+  gap: 1rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  padding-left: 1.5rem;
+  padding-top: 5rem;
+  list-style: disc;
+}
+
+.page-wrapper {
+  display: grid;
+}
+
+
+.gradient-text-1 { font-size: 2.5rem; background: var(--cyan-blue-1); text-align: center;}
+.gradient-text-2 { font-size: 1.75rem; background: var(--cyan-blue-2); }
+.gradient-text-3 { font-size: 1.5rem; background: var(--blue-purple);}
+.gradient-text-4 { font-size: 1rem; background: var(--purpl-pink);}
+
+
+.gradient-text-1,
+.gradient-text-2,
+.gradient-text-3,
+.gradient-text-4 {
+  font-family: 'Aclonica', sans-serif;
+  
+  display: inline-block;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+}
+
+/* 5) Tab title styling --------------------------------------------------- */
+.custom-tab-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  /* choose whichever gradient you like here */
+  background: var(--cyan-blue-2);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* 6) Active tab override ------------------------------------------------- */
+.custom-tab-active {
+  /* you can also inherit the same rules if you want */
+  font-size: 1.5rem;
+  font-weight: bold;
+  background: var(--blue-purple);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* example: make all paragraphs in your tab‐panels blue */
+.page-wrapper .tab-content p {
+  color: #0044aa;
+  margin: 1rem 0;
+}

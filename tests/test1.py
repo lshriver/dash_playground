@@ -1,5 +1,6 @@
 import dash
 from dash import html
+import dash_bootstrap_components as dbc
 
 app = dash.Dash( __name__,
     assets_folder='/workspaces/dash_playground/assets/'
