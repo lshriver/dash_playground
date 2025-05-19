@@ -5,7 +5,7 @@
   --cyan-blue-1: linear-gradient(to right bottom, #00ffee, #0596f0);
   --cyan-blue-2: linear-gradient(to right bottom, #00e8ff, #14b5ff, #3a98ff, #0070eb);
   --blue-purple: linear-gradient(to right bottom, #00e8ff , #410ee7, #8709f5);
-  --purpl-pink: linear-gradient(to right bottom, #410ee7, #eb00d8);
+  --purple-pink: linear-gradient(to right bottom, #410ee7, #eb00d8);
 }
 
 body {
@@ -32,7 +32,7 @@ body {
 .gradient-text-1 { font-size: 2.5rem; background: var(--cyan-blue-1); text-align: center;}
 .gradient-text-2 { font-size: 1.75rem; background: var(--cyan-blue-2); }
 .gradient-text-3 { font-size: 1.5rem; background: var(--blue-purple);}
-.gradient-text-4 { font-size: 1rem; background: var(--purpl-pink);}
+.gradient-text-4 { font-size: 1rem; background: var(--purple-pink);}
 
 
 .gradient-text-1,
@@ -74,4 +74,33 @@ body {
 .page-wrapper .tab-content p {
   color: #0044aa;
   margin: 1rem 0;
+}
+
+/* Feature box for projects and resources */
+.feature-box {
+  background: rgba(0, 0, 0, 0.5);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  padding: 25px; /* Increased from 20px to 25px */
+  margin-bottom: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  backdrop-filter: blur(5px);
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.feature-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.feature-box-content {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-between;
+  text-align: left; /* Left-align the text content */
+  align-items: flex-start; /* Align items to the start (left) */
 }
